@@ -63,3 +63,29 @@ do {
   sum += firstNumber3++;
 } while (firstNumber3 <= lastNumber3);
 console.log("Suma: ", sum);
+
+console.log("==========================Cycle for===========================");
+console.log("// 1");
+firstNumber1 = 25;
+
+for (firstNumber1; firstNumber1 >= lastNumber1; firstNumber1--) {
+  console.log("Current number: ", firstNumber1);
+}
+
+console.log("// 2");
+firstNumber2 = 10;
+
+for (firstNumber2; firstNumber2 <= lastNumber2; firstNumber2++) {
+  if (firstNumber2 % 5 === 0) {
+    console.log("The current number that is divisible by 5: ", firstNumber2);
+  }
+}
+
+console.log("// 3");
+firstNumber3 = 1;
+sum = null;
+
+for (firstNumber3; firstNumber3 <= lastNumber3; firstNumber3++) {
+  sum += firstNumber3;
+}
+console.log("Suma: ", sum);
