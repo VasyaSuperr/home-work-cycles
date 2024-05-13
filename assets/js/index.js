@@ -120,26 +120,56 @@
 //   }
 // }
 
-console.log("// 3");
+// console.log("// 3");
+// console.log(
+//   "Напишіть програму, яка перевіряє, чи є задане число простим за допомогою циклу."
+// );
+
+// let inputNumber = null;
+// let flag = null;
+
+// do {
+//   inputNumber = +prompt("Inpur some number: ", "10");
+// } while (!Number.isFinite(inputNumber));
+
+// for (let i = inputNumber; i >= 1; i--) {
+//   if (inputNumber % i === 0) {
+//     ++flag;
+//   }
+// }
+
+// if (flag <= 2) {
+//   console.log("Input number is prime!");
+// } else {
+//   console.log("Input number is not prime!");
+// }
+
+console.log("// 4");
 console.log(
-  "Напишіть програму, яка перевіряє, чи є задане число простим за допомогою циклу."
+  "Напишіть програму, яка знаходить найбільший спільний дільник (НСД) двох чисел за допомогою циклу."
 );
 
-let inputNumber = null;
-let flag = null;
+const firstNum = 12;
+const secondNum = 18;
+let max = null;
+let largestCommonDivisor = null;
 
-do {
-  inputNumber = +prompt("Inpur some number: ", "10");
-} while (!Number.isFinite(inputNumber));
+if (secondNum > firstNum) {
+  max = secondNum;
+} else {
+  max = firstNum;
+}
 
-for (let i = inputNumber; i >= 1; i--) {
-  if (inputNumber % i === 0) {
-    ++flag;
+console.log("Max number: ", max);
+
+for (let i = max; max >= 1; i--) {
+  if (firstNum % i === 0 && secondNum % i === 0) {
+    largestCommonDivisor = i;
+    break;
   }
 }
 
-if (flag <= 2) {
-  console.log("Input number is prime!");
-} else {
-  console.log("Input number is not prime!");
-}
+console.log(
+  `Largest common divisor for number ${firstNum} and ${secondNum}: `,
+  largestCommonDivisor
+);
