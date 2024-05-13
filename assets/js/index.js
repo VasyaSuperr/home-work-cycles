@@ -1,38 +1,65 @@
 console.log("==========================Cycle while==========================");
 console.log("// 1");
-let firstNumber11 = 25;
-const lastNumber11 = 0;
+let firstNumber1 = 25;
+const lastNumber1 = 0;
 
-while (firstNumber11 >= lastNumber11) {
-  console.log("Current number: ", firstNumber11--);
+while (firstNumber1 >= lastNumber1) {
+  console.log("Current number: ", firstNumber1--);
 }
 
 console.log("// 2");
-let firstNumber12 = 10;
-const lastNumber12 = 50;
+let firstNumber2 = 10;
+const lastNumber2 = 50;
 
-while (firstNumber12 <= lastNumber12) {
-  console.log("The current number that is divisible by 5: ", firstNumber12);
-  firstNumber12 += 5;
+while (firstNumber2 <= lastNumber2) {
+  console.log("The current number that is divisible by 5: ", firstNumber2);
+  firstNumber2 += 5;
 }
 
 console.log("--------------------------------------------------------------");
-firstNumber12 = 10;
+firstNumber2 = 10;
 
-while (firstNumber12 <= lastNumber12) {
-  if (firstNumber12 % 5 === 0) {
-    console.log("The current number that is divisible by 5: ", firstNumber12);
+while (firstNumber2 <= lastNumber2) {
+  if (firstNumber2 % 5 === 0) {
+    console.log("The current number that is divisible by 5: ", firstNumber2);
   }
-  ++firstNumber12;
+  ++firstNumber2;
 }
 
 console.log("// 3");
-let firstNumber13 = 1;
-const lastNumber13 = 100;
+let firstNumber3 = 1;
+const lastNumber3 = 100;
 let sum = null;
 
-while (firstNumber13 <= lastNumber13) {
-  sum += firstNumber13++;
+while (firstNumber3 <= lastNumber3) {
+  sum += firstNumber3++;
   // console.log("Suma: ", sum);
 }
+console.log("Suma: ", sum);
+
+console.log("=======================Cycle do...while=======================");
+console.log("// 1");
+firstNumber1 = 25;
+
+do {
+  console.log("Current number: ", firstNumber1--);
+} while (firstNumber1 >= lastNumber1);
+
+console.log("// 2");
+firstNumber2 = 10;
+
+do {
+  if (firstNumber2 % 5 === 0) {
+    console.log("The current number that is divisible by 5: ", firstNumber2);
+  }
+  ++firstNumber2;
+} while (firstNumber2 <= lastNumber2);
+
+console.log("// 3");
+firstNumber3 = 1;
+sum = null;
+
+do {
+  sum += firstNumber3++;
+} while (firstNumber3 <= lastNumber3);
 console.log("Suma: ", sum);
