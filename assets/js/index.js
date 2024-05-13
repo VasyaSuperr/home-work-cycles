@@ -89,3 +89,22 @@ for (firstNumber3; firstNumber3 <= lastNumber3; firstNumber3++) {
   sum += firstNumber3;
 }
 console.log("Suma: ", sum);
+
+console.log("==============================================================");
+console.log("Additional task from chat GPT");
+console.log("// 1");
+console.log(
+  "Задача про суму чисел: Напишіть програму, яка знаходить суму всіх чисел від 1 до N, де N вводиться користувачем."
+);
+
+let numberN = null;
+let sum1N = null;
+
+do {
+  numberN = +prompt("Input the number N ", "20");
+} while (!Number.isFinite(numberN));
+
+for (let i = 1; i <= numberN; i++) {
+  sum1N += i;
+}
+console.log("Sum from 1 to N: ", sum1N);
