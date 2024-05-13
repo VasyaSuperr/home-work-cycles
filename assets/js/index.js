@@ -109,13 +109,37 @@
 // }
 // console.log("Sum from 1 to N: ", sum1N);
 
-console.log("// 2");
+// console.log("// 2");
+// console.log(
+//   "Напишіть програму, яка виводить на екран таблицю множення від 1 до 10."
+// );
+
+// for (let i = 1; i <= 10; i++) {
+//   for (let j = 1; j <= 10; j++) {
+//     console.log(`${i} x ${j} = ${i * j}`);
+//   }
+// }
+
+console.log("// 3");
 console.log(
-  "Напишіть програму, яка виводить на екран таблицю множення від 1 до 10."
+  "Напишіть програму, яка перевіряє, чи є задане число простим за допомогою циклу."
 );
 
-for (let i = 1; i <= 10; i++) {
-  for (let j = 1; j <= 10; j++) {
-    console.log(`${i} x ${j} = ${i * j}`);
+let inputNumber = null;
+let flag = null;
+
+do {
+  inputNumber = +prompt("Inpur some number: ", "10");
+} while (!Number.isFinite(inputNumber));
+
+for (let i = inputNumber; i >= 1; i--) {
+  if (inputNumber % i === 0) {
+    ++flag;
   }
+}
+
+if (flag <= 2) {
+  console.log("Input number is prime!");
+} else {
+  console.log("Input number is not prime!");
 }
